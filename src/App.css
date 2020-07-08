@@ -1,0 +1,82 @@
+body { 
+  background-color:#9266ff;
+ }
+
+ .App {
+   background-color: #3f3160;
+   min-height: 530px;
+   width: 400px;
+   margin: 40px auto;
+   text-align: center;
+ }
+
+ .AddTodo input {
+  background-color: rgba(27, 112, 137, 1);
+  border: 0cm;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+ }
+
+ .AddTodo input::placeholder {
+   color: rgba(255,255,255,0.5)
+ }
+.AddTodo input:focus {
+  outline: none;
+}
+
+.AddTodo button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(202,156,24,1);
+  cursor: pointer;
+}
+
+.AddTodo button:focus {
+  outline: none;
+}
+
+.Todo {
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #bff007ac;
+  border-radius: 5px;
+}
+
+.Todo p{
+  padding: 10px;
+  position: relative;
+}
+
+.Footer span {
+  padding: 5px;
+  height: 20px;
+  width: 40px;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  background-color: rgba(101, 156, 24, 1);
+  cursor: default ;
+}
+.Footer {
+  text-align: center;
+
+}
+
+.Link {
+  padding: 5px;
+  height: 30px;
+  width: 80px;
+  margin: 10px 2px auto;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
