@@ -1,4 +1,4 @@
-import { ADD_TODO, TOOGLE_TODO } from "../Actions/ActionTypes";
+import { ADD_TODO, TOOGLE_TODO, REMOVE_TODO, REMOVE_LIST } from "../Actions/ActionTypes";
 
 const todoReducer = (state = [], action) => {
     switch (action.type) {
@@ -11,6 +11,10 @@ const todoReducer = (state = [], action) => {
             }
         ];
         case TOOGLE_TODO: return state.map(todo => todo.id === action.id ? { ...todo, completed: !todo.completed } : todo);
+
+        case REMOVE_TODO: return state.filter(todo => todo.id != action.id);
+        
+        case REMOVE_LIST: return []
         default: return state
     }
 }

@@ -43,18 +43,33 @@ body {
 }
 
 .Todo {
+  text-align: center;
+  list-style-type: none;
+}
+.Item{
+  display: inline-flex;
+}
+.Todo p{
   color: #fff;
-  width: 300px;
+  text-decoration-color:black ;
+  width: 200px;
   height: 40px;
-  margin: 20px auto;
   background-color: #bff007ac;
   border-radius: 5px;
+ 
+  justify-content: center;
+ 
 }
+.Todo button{
+  margin-left: 20px;
+  height: 30px;
+  width: 80px;
+  margin-top: 20px;
 
-.Todo p{
-  padding: 10px;
-  position: relative;
 }
+ .List {
+  padding: 20px
+ }
 
 .Footer span {
   padding: 5px;
@@ -68,6 +83,7 @@ body {
 }
 .Footer {
   text-align: center;
+  padding: 10px;
 
 }
 

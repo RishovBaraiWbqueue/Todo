@@ -1,4 +1,4 @@
-import { TOOGLE_TODO, ADD_TODO, SET_VISIBILITY_FILTER } from "./ActionTypes";
+import { TOOGLE_TODO, ADD_TODO, SET_VISIBILITY_FILTER, REMOVE_TODO, REMOVE_LIST} from "./ActionTypes";
 
 let nextToDoId = 0;
 
@@ -21,5 +21,18 @@ export const setVisibilityFilter = filter => {
     return {
         type: SET_VISIBILITY_FILTER,
         filter
+    }
+}
+
+export const removeTodo = id => {
+    return {
+        type: REMOVE_TODO,
+        id
+    }
+}
+
+export const removeList = () => {
+    return {
+        type: REMOVE_LIST
     }
 }
