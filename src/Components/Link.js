@@ -1,14 +1,15 @@
 import React from 'react'
+import { Button } from '@material-ui/core'
 
 const Link = ({ active, onClick, children }) => {
 
     return (
-        <button
-            className='Link'
+        <Button variant="contained"
+                size='small'
             onClick={onClick}
             disabled={active}>
             {children}
-        </button>
+        </Button>
     )
 }
 

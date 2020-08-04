@@ -1,12 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../Redux'
+import { Button,TextField } from '@material-ui/core'
 
 const AddTodo = ({dispatch}) => {
     let input;
     return (
         <div className = 'AddTodo'>
-            <form
+            <form 
                 onSubmit = {
                     e => {
                         e.preventDefault()
@@ -18,8 +19,9 @@ const AddTodo = ({dispatch}) => {
                         input.value = ''
                     }
                 }>
-                    <input type= 'text' ref = { el => (input = el)}></input>
-                    <button type = 'submit'>Add Todo</button>
+                     <input id="outlined-basic" label="Outlined" variant="outlined"  size="small" ref = { el => (input = el)} />
+                    
+                    <Button   variant="contained" color="primary" type = 'submit'>Add Todo</Button>
             </form>
             
         </div>

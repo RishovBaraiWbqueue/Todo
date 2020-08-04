@@ -1,15 +1,18 @@
+*{
+  box-sizing: border-box;
+}
 body { 
   background-color:#9266ff;
  }
 
  .App {
-   background-color: #3f3160;
+   background-color: white;
    min-height: 530px;
-   width: 400px;
+   max-width: 400px;
    margin: 40px auto;
    text-align: center;
  }
-
+/* 
  .AddTodo input {
   background-color: rgba(27, 112, 137, 1);
   border: 0cm;
@@ -20,7 +23,7 @@ body {
   padding: 0 20px;
   font-size: 18px;
   border-radius: 10px;
- }
+ } */
 
  .AddTodo input::placeholder {
    color: rgba(255,255,255,0.5)
@@ -30,12 +33,13 @@ body {
 }
 
 .AddTodo button {
-  height: 30px;
+  /* height: 30px;
   width: 80px;
   border-radius: 10px;
   border: 0;
-  background-color: rgba(202,156,24,1);
+  background-color: rgba(202,156,24,1); */
   cursor: pointer;
+  margin: 20px;
 }
 
 .AddTodo button:focus {
@@ -45,6 +49,7 @@ body {
 .Todo {
   text-align: center;
   list-style-type: none;
+  
 }
 .Item{
   display: inline-flex;
@@ -54,31 +59,31 @@ body {
   text-decoration-color:black ;
   width: 200px;
   height: 40px;
-  background-color: #bff007ac;
+  background-color: #0ddb41ca;
   border-radius: 5px;
+  padding: 5px;
  
   justify-content: center;
  
 }
 .Todo button{
-  margin-left: 20px;
-  height: 30px;
-  width: 80px;
-  margin-top: 20px;
-
+  margin: 20px;
+  max-height: 30px;
+  max-width: 80px;
+ 
 }
  .List {
   padding: 20px
  }
 
-.Footer span {
+ #span {
   padding: 5px;
   height: 20px;
   width: 40px;
   border-radius: 5px;
   color: #fff;
   border: 0;
-  background-color: rgba(101, 156, 24, 1);
+  background-color: rgb(23, 134, 4);
   cursor: default ;
 }
 .Footer {
@@ -86,13 +91,7 @@ body {
   padding: 10px;
 
 }
-
-.Link {
-  padding: 5px;
-  height: 30px;
-  width: 80px;
-  margin: 10px 2px auto;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
+.Footer button{
+margin: 10px;
+cursor: pointer;
 }
